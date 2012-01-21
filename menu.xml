@@ -1,0 +1,71 @@
+﻿<menu>
+	<properties>
+		<!-- Here you can define the maximal width of the menu. If buttons (placed one after another) are wider than the maximal width of the menu, the last button will be moved to the next line. (If you set the maximal width to "0" you will get a vertical menu) -->
+		<menu_width>
+			<main_menu width="750"/>
+			<sub_menu width="750"/>
+		</menu_width>
+		<background_img>
+			<!-- you can chose a menu background file (swf or jpg) enter full path to it or enter "" -->
+			<image url=""/>
+		</background_img>
+		<buttons_sound>
+			<!-- you can chose a button rollover sound file (mp3) enter full path to it or enter "" -->
+			<sound rollover_url="tel.mp3" click_url="soft_ping.mp3"/>
+			<sound1 rollover_url="" click_url=""/>
+		</buttons_sound>
+		<main_menu>
+			<default_view>
+				<padding top="10" left="8" right="8" bottom="10" />
+				<text color="0x3C3C3C" font="Arial" size="18" />
+				<colors_gradient top="0xE9E21A"  top_middle="0xE6B81F" bottom_middle="0xDCB01C" bottom="0xDCB01C"/>
+				<alphas top="100" top_middle="100" bottom_middle="50" bottom=".2"/>
+				<misc offset="2" border_color="0x000000" bar_width="500" bar_color="0xDCB01C"/>
+			</default_view>
+			<mouseover_view>
+				<text color="0xFFFFFF"/>
+				<colors_gradient top="0xE9E21A"  top_middle="0xE6B81F" bottom_middle="0xDCB01C" bottom="0xDCB01C"/>				
+				<alphas top="100" top_middle="100" bottom_middle="50" bottom="1"/>
+				<misc border_color="0x000000"/>
+			</mouseover_view>
+		</main_menu>
+		<sub_menu>
+			<style menu_type="vertical"/>
+			<default_view>
+				<padding top="5" left="10" right="10" bottom="5" />
+				<text color="0xFFFFFF" font="Arial" size="14" />
+				<colors_gradient top="0xDCB01C"  top_middle="0xDCB01C" bottom_middle="0xDCB01C" bottom="0xDCB01C"/>
+				<alphas top="1" top_middle="1" bottom_middle="1" bottom="1"/>
+				<misc offset="0" border_color="0xDCB01C"/>
+			</default_view>
+			<mouseover_view>
+				<text color="0xFFFFFF"/>
+				<colors_gradient top="0x7C7A7A"  top_middle="0x7C7A7A" bottom_middle="0x7C7A7A" bottom="0x7C7A7A"/>				
+				<alphas top="1" top_middle="1" bottom_middle="5" bottom="5"/>
+				<misc border_color="0x237373"/>
+			</mouseover_view>
+		</sub_menu>		
+	</properties>
+	<buttons>
+		<!-- Here you can add / remove menu buttons. -->
+		<!-- To disable/hide a button enter disable="1". -->
+		<button label="Java" url="Java.html" target="_blank">
+			<sub label="item 1" url="1.html" target="_blank"/>
+			<sub label="itemitem 2" url="2.html" target="_blank"/>
+			<sub label="item 3" url="3.html" target="_blank"/>
+			<sub label="itemitemitemitem 4" url="4.html" target="_blank"/>
+		</button>
+		<button label="Flex" url="Flex.html" target="_blank">
+			<sub label="item 5" url="5.html" target="_blank"/>			
+		</button>
+		<button label="Flash" url="Flash.html" target="_blank">
+			<sub label="item 6" url="6.html" target="_blank"/>
+			<sub label="itemitemitem 7" url="7.html" target="_blank"/>
+			<sub label="item 8" url="8.html" target="_blank"/>
+		</button>
+		<button label="DHTML" url="DHTML.html" target="_blank">
+			<sub label="itemitem 9" url="9.html" target="_blank"/>
+			<sub label="item 10" url="10.html" target="_blank"/>
+		</button>
+	</buttons>	
+</menu>
